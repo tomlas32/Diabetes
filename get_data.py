@@ -1,7 +1,7 @@
 """
-Script to download the metabolomics dataset ST000915 from the Metabolomics Workbench.
-This script fetches the ZIP archive for study ST000915 from the official download link 
-and saves it locally as 'ST000915.zip'.
+Script to download the metabolomics dataset ST001906_1 from the Metabolomics Workbench.
+This script fetches the ZIP archive for study ST001906_1 from the official download link 
+and saves it locally as 'ST001906_1.txt'.
 
 Source: https://www.metabolomicsworkbench.org/
 
@@ -13,8 +13,8 @@ Date: 2025-06-27
 
 import requests
 
-url = "https://www.metabolomicsworkbench.org/studydownload/ST000915.zip"
-filename = "ST000915.zip"
+url = "https://www.metabolomicsworkbench.org/data/showfile_t.php?RA=86.186.80.144&DF=MSdata_ST001906_1.txt"
+filename = "ST001906_1.txt"
 
 try:
     r = requests.get(url)
