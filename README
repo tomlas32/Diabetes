@@ -1,0 +1,125 @@
+# 🧬 Metabolomics Analysis for Type 2 Diabetes (T2D)
+
+This repository contains code and data for analyzing targeted metabolomics data related to Type 2 Diabetes. It covers dataset download, exploratory data analysis (EDA), and machine learning classification using Python.
+
+---
+
+## 📁 Project Structure
+
+```plaintext
+.
+├── get_data.py             # Script to download dataset ST001906_1 from Metabolomics Workbench
+├── ST001906_1.txt          # Raw metabolomics dataset (tab-separated values)
+├── eda_v01.ipynb           # Notebook for exploratory data analysis
+├── ML_pipeline.ipynb       # Notebook for machine learning pipeline
+└── .gitignore              # Git ignore rules
+```
+
+---
+
+## 📥 Dataset
+
+- **Source**: [Metabolomics Workbench](https://www.metabolomicsworkbench.org/)
+- **Study ID**: ST001906_1  
+- **Description**: Targeted metabolite profiling of control and Type 2 Diabetes human samples  
+- **Format**: Tab-delimited `.txt` file
+
+### 📦 To download the dataset:
+
+```bash
+python get_data.py
+```
+
+This script saves the file as `ST001906_1.txt` in your working directory.
+
+---
+
+## 📒 Notebooks
+
+### `eda_v01.ipynb`
+
+Performs exploratory data analysis:
+- Loads and parses the metabolomics matrix
+- Separates control and diabetic groups
+- Applies log transformation
+- Handles missing values
+- Generates:
+  - PCA plots
+  - Correlation heatmaps
+  - Boxplots of selected metabolites
+
+### `ML_pipeline.ipynb`
+
+Builds and evaluates classification models:
+- **Preprocessing**
+  - Label encoding of diagnosis
+  - Normalization / standardization
+  - Train-test split
+- **Models**
+  - Logistic Regression
+  - Random Forest Classifier
+- **Evaluation**
+  - Accuracy score
+  - Confusion matrix
+  - ROC-AUC curve
+
+---
+
+## 🛠 Requirements
+
+Install required dependencies with:
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn plotly scipy jupyter
+```
+
+---
+
+## 🚀 Running the Project
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/tomlas32/Diabetes.git
+cd Diabetes
+```
+
+2. Download the dataset:
+
+```bash
+python get_data.py
+```
+
+3. Launch the notebooks:
+
+```bash
+jupyter notebook
+```
+
+Then open `eda_v01.ipynb` or `ML_pipeline.ipynb`.
+
+---
+
+## 🎯 Objective
+
+The goal is to identify metabolite biomarkers that differentiate Type 2 Diabetes from healthy controls using machine learning and statistical methods.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See `LICENSE` for details.
+
+---
+
+## 👤 Author
+
+**Tomasz Lasota**  
+GitHub: [https://github.com/tomlas32](https://github.com/tomlas32)
+
+---
+
+## 🙏 Acknowledgements
+
+- [Metabolomics Workbench](https://www.metabolomicsworkbench.org/) for providing the dataset
+- Python open-source ecosystem: pandas, seaborn, matplotlib, scikit-learn, plotly
