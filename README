@@ -12,6 +12,7 @@ This repository contains code and data for analyzing targeted metabolomics data 
 ├── ST001906_1.txt          # Raw metabolomics dataset (tab-separated values)
 ├── eda_v01.ipynb           # Notebook for exploratory data analysis
 ├── ML_pipeline.ipynb       # Notebook for machine learning pipeline
+├── requirements.txt        # environment requirments
 └── .gitignore              # Git ignore rules
 ```
 
@@ -70,7 +71,7 @@ Builds and evaluates classification models:
 Install required dependencies with:
 
 ```bash
-pip install pandas numpy matplotlib seaborn scikit-learn plotly scipy jupyter
+pip install -r requirements.txt
 ```
 
 ---
