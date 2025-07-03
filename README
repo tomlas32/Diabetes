@@ -6,7 +6,7 @@ This repository contains code and data for analyzing targeted metabolomics data 
 
 ## 📁 Project Structure
 
-```plaintext
+```
 .
 ├── get_data.py             # Script to download dataset ST001906_1 from Metabolomics Workbench
 ├── ST001906_1.txt          # Raw metabolomics dataset (tab-separated values)
